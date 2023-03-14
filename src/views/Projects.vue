@@ -65,7 +65,7 @@ const state = reactive({
     },
     {
       title: "Games library",
-      link: "https://games-library-app.vercel.app/",
+      link: "https://games-library.vercel.app/",
       video: "/src/assets/imgs/gameslibrary.gif",
       description: "Esse projeto consiste em um CRUD com VueJs. Incluir, alterar e excluir as informações de uma lista de jogos.",
     },
