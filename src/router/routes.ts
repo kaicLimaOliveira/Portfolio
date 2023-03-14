@@ -6,7 +6,7 @@ const routes: Array<RouteRecordRaw> = [
         name: "Home",
         component: () => import("../views/Home.vue"),
         meta: {
-            title: 'Pagina inicial'
+            title: 'Kaic Oliveira'
         },
     },
     {

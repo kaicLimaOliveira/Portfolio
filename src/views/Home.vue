@@ -1,22 +1,29 @@
 <template>
   <div>
     <div class="is-flex visual w-100">
-      <div class="visual-design px-6">
-        <div class="is-size-1 has-text-left visual-design-title has-text-weight-bold">
+      <div class="visual-design px-6 py-6 is-flex is-flex-direction-column is-justify-content-space-evenly">
+        <section class="is-size-1 has-text-left visual-design-title has-text-weight-bold">
           <span class="has-text-default">Web Developer</span> <br>
           <span class="web-designer">& Designer</span>
-        </div>
+        </section>
 
-        <div class="is-flex is-flex-direction-column has-text-left mt-6 subtitle">
+        <section class="is-flex is-flex-direction-column has-text-left pr-10 subtitle">
           <span>
-            Eu sou um bacharel em ciências da computação, web developer, <br>
+            Eu sou um bacharel em ciências da computação, web developer,
             web designer, UI e UX.
           </span>
 
-          <span class="mt-5">
-            Minhas ferramentas favoritas para o desenvolvimento <br> são VSCode, Figma, insomnia e DBeaver.
+          <span class="mt-4">
+            Minhas ferramentas favoritas para o desenvolvimento são VSCode, Figma, insomnia e DBeaver.
           </span>
-        </div>
+        </section>
+
+        <section class="curriculum">
+          <a href="src/assets/files/Curriculo.pdf" download="Kaic de Lima Oliveira.pdf"
+            class="button curriculum-download has-bg-default">
+            Visualize meu currículo
+          </a>
+        </section>
       </div>
 
       <div class="mt-6 visual-technologies">
@@ -32,8 +39,8 @@
         </div>
 
         <div class="is-flex is-justify-content-space-around is-align-items-center mt-6">
-          <a href="https://www.django-rest-framework.org/" class="has-text-default" target="_blank">
-            <span class="is-clickable technologies-icons is-size-1 has-text-weight-bold">
+          <a href="https://www.django-rest-framework.org/" class="has-text-default technologies-icons" target="_blank">
+            <span class="is-clickable is-size-1 has-text-weight-bold">
               dj
             </span>
           </a>
@@ -63,10 +70,6 @@
           </a>
         </div>
       </div>
-
-      <div class="card">
-        <span class="button-check">Curriculo</span>
-      </div>
     </div>
   </div>
 </template>
@@ -80,10 +83,9 @@
 
   &-design {
     border-right: 1.5px solid #29292e;
-    width: 63%;
+    width: 60%;
 
     &-title {
-      margin-top: 65px;
       line-height: 1.2;
     }
 
@@ -95,21 +97,21 @@
   }
 
   &-technologies {
-    width: 32%;
+    width: 40%;
   }
 
-  .card {
-    width: 7%;
 
-    .button-check {
-      background-color: #E0EDF2;
-      transform: rotateZ(-90deg);
+  .curriculum {
+
+    &-download {
+      font-weight: 500;
+      width: 20rem;
     }
   }
 
   .web-designer {
     color: #18181a;
-    text-shadow: 0.5px 0.5px 3.5px #956df1;
+    text-shadow: 1px 0.5px 5px #956df1;
   }
 }
 </style>

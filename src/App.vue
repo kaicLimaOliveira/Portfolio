@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="{ 'light-theme': isLightModeOn }" class="ts-3">
     <RouterView v-slot="{ Component }">
 
       <Navbar>
@@ -8,18 +8,28 @@
         </Transition>
       </Navbar>
 
-      <!-- <Loader v-if="loadingStore.isLoading"></Loader> -->
+      <Loader v-if="loadingStore.isLoading"></Loader>
     </RouterView>
   </div>
 </template>
 
 <script setup lang="ts">
 import Navbar from "./components/Navbar.vue"
+import Loader from "./components/Loader.vue"
+
+import { computed } from "vue";
+import { useLightModeStore } from './store/lightStore';
+import { useLoadingStore } from "./store/loadingStore"
+
+const loadingStore = useLoadingStore()
+const lightModeStore = useLightModeStore()
+const isLightModeOn = computed(() => lightModeStore.isLightModeOn)
 </script>
 
 
 <style lang="scss">
 @import './src/assets/scss/helpers.scss';
+@import './assets/scss/light-theme.scss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 #app {
@@ -27,7 +37,7 @@ import Navbar from "./components/Navbar.vue"
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #e8e8e8;
+  color: #dedede;
 }
 
 html,
