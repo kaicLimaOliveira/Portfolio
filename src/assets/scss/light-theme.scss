@@ -1,1 +1,27 @@
-.light-theme {}
+.light-theme {
+
+  .sidebar {
+    background-color: rgb(226, 226, 226) !important;
+    border-right: 1px #d5d5d5 solid;
+  }
+
+  .content {
+    background-color: rgb(226, 226, 226) !important;
+
+    .nav-content {
+      box-shadow: inset 0 -1px 0 #d5d5d5;
+    }
+
+    .visual {
+      border-bottom: 1.5px #d5d5d5 solid;
+
+      &-design {
+        border-right: 1.5px #d5d5d5 solid;
+      }
+    }
+  }
+
+  .carousel-container {
+    background-color: rgb(218, 218, 218) !important;
+  }
+}

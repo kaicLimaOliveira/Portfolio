@@ -30,6 +30,7 @@ const isLightModeOn = computed(() => lightModeStore.isLightModeOn)
 <style lang="scss">
 @import './src/assets/scss/helpers.scss';
 @import './assets/scss/light-theme.scss';
+@import './assets/scss/media-querie.scss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 #app {

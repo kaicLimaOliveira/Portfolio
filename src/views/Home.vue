@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="is-flex visual w-100">
-      <div class="visual-design px-6 py-6 is-flex is-flex-direction-column is-justify-content-space-evenly">
-        <section class="is-size-1 has-text-left visual-design-title has-text-weight-bold">
+      <div class="visual-design is-flex is-flex-direction-column is-justify-content-space-evenly">
+        <section class="has-text-left visual-design-title has-text-weight-bold">
           <span class="has-text-default">Web Developer</span> <br>
           <span class="web-designer">& Designer</span>
         </section>
@@ -19,7 +19,7 @@
         </section>
 
         <section class="curriculum">
-          <a href="src/assets/files/Curriculo.pdf" download="Kaic de Lima Oliveira.pdf"
+          <a href="/images/Curriculo.pdf" download="Kaic de Lima Oliveira.pdf"
             class="button curriculum-download has-bg-default">
             Visualize meu currículo
           </a>
@@ -84,14 +84,16 @@
   &-design {
     border-right: 1.5px solid #29292e;
     width: 60%;
+    padding: 3rem;
 
     &-title {
       line-height: 1.2;
+      font-size: 2.6rem;
     }
 
     .subtitle {
       color: #9a80d7;
-      font-size: 15px;
+      font-size: 1rem;
       font-weight: 500;
     }
   }
@@ -105,7 +107,7 @@
 
     &-download {
       font-weight: 500;
-      width: 20rem;
+      padding: 1.3rem;
     }
   }
 

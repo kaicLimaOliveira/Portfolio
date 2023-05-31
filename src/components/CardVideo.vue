@@ -7,7 +7,7 @@
         <img :src="props.image" :alt="props.title">
         <div class="container-project is-flex is-justify-content-center is-flex-direction-column is-align-items-center">
           <h1>{{ props.title }}</h1>
-          <p class="description-project">
+          <p class="description">
             {{ props.description }}
           </p>
         </div>
@@ -69,12 +69,13 @@ const props = defineProps<{
       h1 {
         font-size: 1.5rem;
         margin: 0px;
+        color: white;
       }
 
-      &-project {
+      .description {
         letter-spacing: 1px;
-        font-size: 15px;
-        margin-top: 8px;
+        font-size: 0.6rem;
+        margin-top: 0.5rem;
       }
     }
   }

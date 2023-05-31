@@ -1,6 +1,6 @@
 <template>
   <div class="p-5">
-    <div>Projetos</div>
+    <h3>Projetos</h3>
 
     <div class="carousel-container">
       <Carousel :items-to-show="3" :wrap-around="true" :autoplay="4000">
@@ -30,49 +30,49 @@ const state = reactive({
     {
       title: "Pokedex",
       link: "https://pokedex-ashy-omega.vercel.app/sobre",
-      video: "/src/assets/imgs/pokedex.gif",
+      video: "/images/pokedex.gif",
       description: "Projeto",
     },
     {
       title: "IgniteLab",
       link: "https://ignite-lab-mocha.vercel.app/",
-      video: "/src/assets/imgs/ignitelab.gif",
+      video: "/images/ignitelab.gif",
       description: "Projeto de uma plataforma de um evento de especialização em front-end usando React.",
     },
     {
       title: "Cineflix",
       link: "https://kaiclimaoliveira.github.io/Cineflix/",
-      video: "/src/assets/imgs/cineflix.gif",
+      video: "/images/cineflix.gif",
       description: "Plataforma de streaming onde você pode usar as suas mãos como o controle.",
     },
     {
       title: "Cripto Currency",
       link: "https://cripto-currency.vercel.app/",
-      video: "/src/assets/imgs/cripto_currency.gif",
+      video: "/images/cripto_currency.gif",
       description: "Projeto que trata-se de uma consulta a uma API que traz a cada 10 minutos, o mercado de criptomoedas com os valores atualizados.",
     },
     {
       title: "DtMoney",
       link: "https://dt-money-ruddy.vercel.app/",
-      video: "/src/assets/imgs/dtmoney.gif",
+      video: "/images/dtmoney.gif",
       description: "O DtMoney é um app para realizar o gerenciamento de contas pessoais.",
     },
     {
       title: "Vagas",
       link: "https://vaga-app.vercel.app/",
-      video: "/src/assets/imgs/vagas.gif",
+      video: "/images/vagas.gif",
       description: "App de registro de vagas com local storage, o filtro de vagas e da ação de favoritar as vagas.",
     },
     {
       title: "Games library",
       link: "https://games-library.vercel.app/",
-      video: "/src/assets/imgs/gameslibrary.gif",
+      video: "/images/gameslibrary.gif",
       description: "Esse projeto consiste em um CRUD com VueJs. Incluir, alterar e excluir as informações de uma lista de jogos.",
     },
     {
       title: "Letmeask",
       link: "https://letme-ask-eight.vercel.app/",
-      video: "/src/assets/imgs/letmeask.gif",
+      video: "/images/letmeask.gif",
       description: "O Letmeask é um app para realizar perguntas e respostas dentro de determinadas salas criadas pelos usuários.",
     },
   ]

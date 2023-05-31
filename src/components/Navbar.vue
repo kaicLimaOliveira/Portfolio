@@ -1,14 +1,9 @@
 <template>
   <div class="is-flex">
-    <aside class="sidebar is-flex is-flex-direction-column is-clipped is-justify-content-space-between"
-      :class="state.sideBar">
+    <aside class="sidebar is-flex is-flex-direction-column is-clipped is-justify-content-space-between">
       <div class="mt-5 mb-2 mx-4">
-        <div class="is-flex is-align-items-center"
-          :class="state.sideBar == 'opened' ? 'is-justify-content-space-evenly' : 'is-justify-content-center'">
-          <Icon icon="bars" size="lg" @click="toggleSideBar" class="is-clickable has-text-default"></Icon>
-          <span v-show="state.sideBar == 'opened'" class="ml-2 has-text-grey-light has-text-weight-medium">
-            Menu
-          </span>
+        <div class="is-flex is-align-items-center is-justify-content-center">
+          <Icon icon="bars" size="lg" class="is-clickable has-text-default"></Icon>
         </div>
       </div>
 
@@ -16,36 +11,27 @@
         <div class="mb-4 animate">
           <a href="https://www.linkedin.com/in/kaic-de-lima-oliveira-3633041a4/" target="_blank">
             <Icon :icon="['fab', 'linkedin']" size="xl" class="has-text-default"></Icon>
-            <span v-show="state.sideBar == 'opened'" class="ml-2 has-text-grey-light has-text-weight-medium">
-              Linkedin
-            </span>
           </a>
         </div>
 
         <div class="mb-4 animate">
           <a href="https://github.com/kaicLimaOliveira" target="_blank">
             <Icon :icon="['fab', 'github']" size="xl" class="has-text-default"></Icon>
-            <span v-show="state.sideBar == 'opened'" class="ml-2 has-text-grey-light has-text-weight-medium">
-              Github
-            </span>
           </a>
         </div>
 
         <div class="mb-2 animate">
           <RouterLink :to="{ name: 'Projects' }">
             <Icon icon="code-commit" size="xl" class="has-text-default"></Icon>
-            <span v-show="state.sideBar == 'opened'" class="ml-2 has-text-grey-light has-text-weight-medium">
-              Projetos
-            </span>
           </RouterLink>
         </div>
 
       </div>
     </aside>
 
-    <header class="is-flex is-flex-direction-column is-flex-grow-1 vh-100 w-25">
+    <header class="content is-flex is-flex-direction-column is-flex-grow-1 vh-100 w-25">
       <div class="nav-content is-flex is-justify-content-space-between is-align-items-center">
-        <div class="ml-6">
+        <div class="ml-5">
           <RouterLink :to="{ name: 'Home' }">
             <Icon icon="code" size="lg" class="has-text-default"></Icon>
             <span class="ml-2 has-text-default">Kaic Oliveira</span>
@@ -92,15 +78,8 @@ const togglelightMode = () => {
 }
 
 const state = reactive({
-  sideBar: localStorage.getItem('sideBar') || 'opened',
   modal: false,
 });
-
-function toggleSideBar() {
-  state.sideBar = state.sideBar == 'opened' ? 'closed' : 'opened'
-  localStorage.setItem('sideBar', state.sideBar)
-}
-
 </script>
 
 <style lang="scss" scoped>
@@ -116,7 +95,6 @@ function toggleSideBar() {
 }
 
 .nav-content {
-  transition: 0.3s ease;
   box-shadow: inset 0 -1px 0 #29292e;
 }
 
@@ -140,6 +118,7 @@ function toggleSideBar() {
   box-shadow: inset 0 -1px 0 #29292e;
   border-right: 1.5px #29292e solid;
   background-color: #1a1a1e;
+  width: 81px;
 
   &-links {
     height: 100%;
@@ -157,18 +136,6 @@ function toggleSideBar() {
   &:hover {
     transform: translateY(-4px);
   }
-}
-
-.opened {
-  width: 150px;
-
-  .menu-bars {
-    justify-content: space-around;
-  }
-}
-
-.closed.sidebar {
-  width: 81px;
 }
 
 .icon {
