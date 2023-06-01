@@ -22,6 +22,11 @@
     font-size: xx-small;
   }
 
+  .sidebar {
+    width: 60px !important;
+    box-shadow: none !important;
+  }
+
   .visual {
     border: none !important;
     flex-direction: column;
@@ -68,6 +73,11 @@
 @media (max-width: 389px) and (min-width: 300px) {
   .nav-content {
     font-size: xx-small;
+  }
+
+  .sidebar {
+    width: 50px !important;
+    box-shadow: none !important;
   }
 
   .visual {
