@@ -1,7 +1,7 @@
 <template>
-  <Transition name="modal" class="modal-css">
-    <div class="custom-modal" v-show="open">
-      <div class="modal-background" @click="$emit('close-modal')"></div>
+  <Transition name="modal">
+    <div class="custom-modal" v-show="props.open">
+      <div class="modal-background" @click="emit('close-modal')"></div>
       <div class="vh-100 is-flex is-align-items-center is-justify-content-center">
         <div class="modal-card">
           <header class="modal-card-head is-justify-content-space-between">
@@ -15,9 +15,7 @@
           </section>
           <footer class="modal-card-foot">
             <slot name="footer">
-              <button class="button mr-3 is-dark-green" @click="$emit('close-modal')">
-                Ok
-              </button>
+
             </slot>
           </footer>
         </div>
@@ -27,13 +25,8 @@
 </template>
 
 <script setup lang="ts">
-
 const emit = defineEmits(['close-modal'])
-
-const props = defineProps({
-  open: Boolean
-})
-
+const props = defineProps({ open: Boolean })
 </script>
 
 <style lang="scss" scoped>

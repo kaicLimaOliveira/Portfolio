@@ -17,6 +17,7 @@ import {
     faXmark,
     faSun,
     faMoon,
+    faEnvelope,
 } from "@fortawesome/free-solid-svg-icons"
 
 import {
@@ -27,6 +28,7 @@ import {
     faPython,
     faJsSquare,
     faSass,
+    faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons"
 
 
@@ -46,6 +48,8 @@ library.add(
     faXmark,
     faSun,
     faMoon,
+    faEnvelope,
+    faWhatsapp,
 )
 
 const pinia = createPinia()
