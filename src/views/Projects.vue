@@ -88,4 +88,8 @@ const state = reactive({
   display: block;
   padding: 1.25rem;
 }
+
+h3 {
+  color: #fff;
+}
 </style>

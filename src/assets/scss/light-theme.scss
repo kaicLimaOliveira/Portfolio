@@ -24,4 +24,20 @@
   .carousel-container {
     background-color: rgb(218, 218, 218) !important;
   }
+
+  .modal-card-head,
+  .modal-card-body,
+  .modal-card-foot {
+    background-color: rgb(226, 226, 226) !important;
+
+    span {
+      color: #000;
+    }
+  }
+
+  .carousel__next,
+  .carousel__prev,
+  h3 {
+    color: #000 !important;
+  }
 }

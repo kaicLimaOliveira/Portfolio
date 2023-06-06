@@ -53,15 +53,13 @@
     </header>
 
 
-    <Teleport to="body">
-      <Modal :open="state.modal" @closeModal="state.modal = false">
-        <template #body>
-          <div class="is-flex is-justify-content-center">
-            <Card></Card>
-          </div>
-        </template>
-      </Modal>
-    </Teleport>
+    <Modal :open="state.modal" @closeModal="state.modal = false">
+      <template #body>
+        <div class="is-flex is-justify-content-center">
+          <Card></Card>
+        </div>
+      </template>
+    </Modal>
   </div>
 </template>
 

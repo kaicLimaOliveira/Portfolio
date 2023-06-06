@@ -76,4 +76,14 @@ body {
     transform: translateY(-4px);
   }
 }
+
+.carousel__next {
+  right: -30px !important;
+  color: #fff !important;
+}
+
+.carousel__prev {
+  left: -30px !important;
+  color: #fff !important;
+}
 </style>
