@@ -35,9 +35,6 @@ const props = defineProps<{
     -webkit-box-pack: center;
     -webkit-box-align: center;
     padding: 1rem;
-    position: relative;
-    width: 100%;
-    height: 100%;
 
 
     img {
@@ -52,7 +49,7 @@ const props = defineProps<{
       -webkit-box-pack: center;
       -webkit-box-align: center;
       position: absolute;
-      padding: 3rem;
+      padding: 2rem;
       z-index: 3;
       opacity: 0;
       transition: all 0.5s ease 0s;

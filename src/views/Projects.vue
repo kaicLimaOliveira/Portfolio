@@ -3,7 +3,7 @@
     <h3>Projetos</h3>
 
     <div class="carousel-container">
-      <Carousel :items-to-show="3" :wrap-around="true" :autoplay="4000">
+      <Carousel :items-to-show="3" :wrap-around="true" :autoplay="100000">
         <Slide v-for="project, key in state.projects" :key="key">
           <div class="carousel__item">
             <CardVideo :key="key" :title="project.title" :link="project.link" :image="project.video"
@@ -31,7 +31,7 @@ const state = reactive({
       title: "Pokedex",
       link: "https://pokedex-ashy-omega.vercel.app/sobre",
       video: "/images/pokedex.gif",
-      description: "Projeto",
+      description: "Projeto para testar o conhecimento em Transition do Vue.js 3",
     },
     {
       title: "IgniteLab",
@@ -74,6 +74,12 @@ const state = reactive({
       link: "https://letme-ask-eight.vercel.app/",
       video: "/images/letmeask.gif",
       description: "O Letmeask é um app para realizar perguntas e respostas dentro de determinadas salas criadas pelos usuários.",
+    },
+    {
+      title: "VueComponents",
+      link: "https://vue-components-gules.vercel.app/",
+      video: "/images/vuecomponents.gif",
+      description: "Esse projeto tem como objetivo mostrar alguns dos principais componentes que eu utilizo e que desenvolvi, além de demonstrar um pouco do meu conhecimento nas tecnologias.",
     },
   ]
 })
