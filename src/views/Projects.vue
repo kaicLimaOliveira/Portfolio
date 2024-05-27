@@ -71,7 +71,7 @@ const state = reactive({
     },
     {
       title: "Letmeask",
-      link: "https://letme-ask-eight.vercel.app/",
+      link: "https://letmeask-f51c3.web.app/",
       video: "/images/letmeask.gif",
       description: "O Letmeask é um app para realizar perguntas e respostas dentro de determinadas salas criadas pelos usuários.",
     },
